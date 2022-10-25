@@ -5,14 +5,13 @@ import { AppComponent } from "./app.component";
 import { NxWelcomeComponent } from "./nx-welcome.component";
 import { RouterModule } from "@angular/router";
 import { appRoutes } from "./app.routes";
+import { DashboardComponent } from "./pages/dashboard/dashboard.component";
 
 @NgModule({
-    declarations: [AppComponent, NxWelcomeComponent],
-    imports: [BrowserModule, RouterModule.forRoot(appRoutes, {initialNavigation: "enabledBlocking"})],
-    providers: [],
-    exports: [
-        AppComponent
-    ],
-    bootstrap: [AppComponent]
+  declarations: [AppComponent, NxWelcomeComponent, DashboardComponent],
+  imports: [BrowserModule, RouterModule.forRoot(appRoutes, { initialNavigation: "enabledBlocking" })],
+  providers: [],
+  exports: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
