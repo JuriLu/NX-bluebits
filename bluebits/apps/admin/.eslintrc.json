@@ -10,7 +10,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "bluebits",
+            "prefix": "admin",
             "style": "camelCase"
           }
         ],
@@ -18,10 +18,13 @@
           "error",
           {
             "type": "element",
-            "prefix": "bluebits",
+            "prefix": "admin",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "@angular-eslint/no-empty-lifecycle-method": "off",
+        "no-empty-function": "off",
+        "@typescript-eslint/no-empty-function": "off"
       }
     },
     {
